@@ -518,19 +518,18 @@
   .l-pu {
     height: 96px;
     font-size: 32px;
-    padding: 0 14px;
-    box-sizing: border-box;
-    line-height: 96px;
     display: flex;
     justify-content: space-between;
     text-align: center;
    .l-mi {
-    margin:  auto  0;
+    display: flex;
+    align-items: center;
     width:180px;
     .van-stepper__minus, .van-stepper__plus {
       width:33%;
       border-color: #ccc;
-      height: 61px;
+      height: 60px;
+      // background: #fff;
     }
     .van-stepper__minus {
       border-radius: 18px 0 0 18px;
@@ -539,24 +538,30 @@
       border-radius: 0 18px 18px 0;
     }
     .van-stepper__input{
-      line-height: 61px;
+      line-height: 60px;
       width:33%;
-      height: 61px;
+      height: 60px;
       font-size: 24px;
       box-sizing: border-box;
-      border-color: #ccc;
+      border:1PX solid #ccc;
+      border-width:1PX 0;
+      padding: 0;
+      background: #fff;
     }
     .van-stepper__minus::before, .van-stepper__plus::before {
       width: 20px !important;
-      height: 2px !important;
+      height: 1PX !important;
       color: #999 !important;
     }
     .van-stepper__minus::after, .van-stepper__plus::after {
       height: 20px !important;
-      width:2px !important;
+      width:1PX !important;
       color: #999 !important;
     }
-
+    .van-stepper__minus, .van-stepper__plus{
+      border:1PX solid #ccc;
+      background: #fff;
+    }
   }
   }
   .p-line {

@@ -343,12 +343,14 @@ export default {
    justify-content: space-between;
    text-align: center;
   .l-mi {
-    margin:  auto  0;
     width:180px;
+    display: flex;
+    align-items: center;
     .van-stepper__minus, .van-stepper__plus {
       width:33%;
       border-color: #ccc;
-      height: 61px;
+      height: 60px;
+      background: #fff;
     }
     .van-stepper__minus {
       border-radius: 18px 0 0 18px;
@@ -357,12 +359,15 @@ export default {
       border-radius: 0 18px 18px 0;
     }
     .van-stepper__input{
-      line-height: 61px;
+      line-height: 60px;
       width:33%;
-      height: 61px;
+      height: 60px;
       font-size: 24px;
       box-sizing: border-box;
-      border-color: #ccc;
+       border:1PX solid #ccc;
+      border-width:1PX 0;
+      padding: 0;
+      background: #fff;
     }
     .van-stepper__minus::before, .van-stepper__plus::before {
       width: 20px !important;
@@ -375,7 +380,7 @@ export default {
       color: #999 !important;
     }
     .van-stepper__minus, .van-stepper__plus{
-      border-width: 1PX
+      border:1PX solid #ccc;
     }
   }
 }
