@@ -107,7 +107,8 @@ router.beforeEach((to, from, next) => {
     var auth = localStorage.getItem('Authorization');
     let data={
       code:code,
-      isApply:isApply
+      isApply:isApply,
+      isShare:null
     }
     if(!auth||to.fullPath=='/home'){
       queryList(data).then(res => {
